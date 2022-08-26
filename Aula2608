@@ -1,0 +1,32 @@
+/*-----------------------------------------------*
+ *SENAC - TADS - Programação Orientada a Objetos *
+ *      Autor: 	1142410462 - Eddie Mauricio      *
+ *-----------------------------------------------*
+ *Objetivo: Busca de Preço                       *
+ *                                               *
+ *Descrição:                                     *
+ *       <<colocar aqui um breve descrição>>     *
+ *  e.g: fazer busca na internet (Scrap de dados)*
+ *       do melhor preço de um determinado       *
+ *-----------------------------------------------*
+ *
+ * ----------------------------------------------*/
+import javax.swing.*;
+
+public class Main {
+    public static void main(String[] args) {
+        String[] cod={"p01","p02","p03","p04","p05","p06","p07","p08","p09","p10"};
+        String[] produto={"Arroz","Feijão","Batata","Leite","Carne","Frango","Cenora","Café","Tomate","Banana"};
+        float[] preco={10.99f,12,99f,6.5f,7,32.80f,16.40f,5.60f,15,3.50f,9};
+        String a = JOptionPane.showInputDialog("Digite o Codigo do Produto: ");
+
+        for(int i=0;i < produto.length;i++){
+            if(a.equals(produto[i])){
+                JOptionPane.showMessageDialog(null,"O produto "+produto[i]+ " tem o valor de "+preco[i]);
+                break;
+            }
+        }
+
+    }
+
+}
